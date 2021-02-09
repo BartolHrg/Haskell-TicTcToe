@@ -80,10 +80,4 @@ loop (t:turns) board msg = do
         loop (t:turns) board "that's wrong input!\n"
 
 main = do
-    -- loop turns 3
-    clear
     loop turns board ""
-    -- printBoard board
-    -- printBoard $ insert (0, 2) 'x' board
-    -- printBoard $ change "b3" board 'o'
-    -- print $ checkDiagonals $ change "a1" (change "b2" (change "c3" board 'x') 'x') 'x'
